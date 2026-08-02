@@ -1,0 +1,51 @@
+.app-header {
+  background: linear-gradient(135deg, #6C5CE7, #00B894);
+  color: white;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.25);
+  border-bottom: none;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  padding: 26px;
+  margin-bottom: 22px;
+  border: none;
+}
+
+.revenue-box {
+  background: linear-gradient(135deg, #00B894, #6C5CE7);
+  color: white;
+  padding: 22px 24px;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(0, 184, 148, 0.25);
+  border-left: none;
+}
+
+.chart-box {
+  flex: 1; min-width: 320px;
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 22px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.chart-box h3 {
+  margin-top: 0; font-size: 14px; font-weight: 700; color: #4B5563;
+  border-bottom: 2px solid #F3F4F6; padding-bottom: 12px;
+  text-transform: none; letter-spacing: 0;
+}
