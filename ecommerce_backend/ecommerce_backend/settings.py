@@ -15,6 +15,7 @@ import os
 import dj_database_url
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://ecommerce-analytics-dashboard-jade-nine.vercel.app",
 ]
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
