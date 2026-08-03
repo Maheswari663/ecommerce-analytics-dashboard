@@ -3,14 +3,19 @@ from django.contrib.auth.models import User
 
 
 class Command(BaseCommand):
-    help = 'Creates a default superuser if one does not exist'
+    help = 'Creates or updates a default superuser'
 
     def handle(self, *args, **kwargs):
         username = 'admin'
         password = 'Admin@1234'
 
-        if not User.objects.filter(username=username).exists():
-            User.objects.create_superuser(username=username, email='admin@example.com', password=password)
+        user, created = User.objects.get_or_create(username=username, defaults={'email': 'admin@example.com'})
+        user.is_staff = True
+        user.is_superuser = True
+        user.set_password(password)
+        user.save()
+
+        if created:
             self.stdout.write(self.style.SUCCESS(f'Superuser "{username}" created successfully!'))
         else:
-            self.stdout.write(self.style.WARNING(f'Superuser "{username}" already exists.'))
+            self.stdout.write(self.style.SUCCESS(f'Existing user "{username}" updated to superuser!'))
