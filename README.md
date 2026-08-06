@@ -1,3 +1,4 @@
+
 # 📊 E-commerce Analytics Dashboard
 
 A full-stack e-commerce analytics platform built with **Django REST Framework** and **React**, featuring real-time business intelligence, customer segmentation, and sales forecasting.
@@ -164,3 +165,7 @@ Charts are saved to `ecommerce_backend/analytics_charts/`.
 ## 👤 Author
 
 Built as a personal project to demonstrate full-stack development combined with practical data analytics — showcasing Django, React, Pandas, and scikit-learn working together in a single application.
+
+
+
+login:name=admin,passward=Admin@1234
